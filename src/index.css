@@ -1,5 +1,64 @@
+body.light {
+  background-color: #ffffff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Light Mode Navbar */
+body.light .navbar {
+  background-color: #1d857b;
+  color: #000;
+}
+
+/* Dark Mode Navbar */
+body.dark .navbar {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-decoration: none;
+ 
+}
+
+body.light .toggle-btn {
+  background-color: #1d857b;
+  color: #fff;
+  font-size: large;
+}
+
+body.dark .toggle-btn {
+  background-color: #1e1e1e;
+  color: #e9e3e3;
+  font-size: large;
+}
 body {
   margin: 0;
+  margin-top: 100px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +69,66 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.navbar{
+  background-color:#1d857b;
+  padding:1rem;
+  
+}
+.navbar-brand{
+  color: white;
+}
+.navbar-nav{
+  font-size: large;
+}
+
+.textprimary{
+  color: #1d857b;
+}
+ .rounded-circle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white; 
+  margin-right: 5px;/* Optional: Add a border */
+}
+/* Homepage Background */
+.homepage-container {
+  background: linear-gradient(120deg, #1a1a2e, #16213e);
+  text-align: center;
+}
+
+/* Call-to-Action Button */
+.btn-primary {
+  background-color: #d1cccc;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #f1eaea;
+}
+.imagestyle{
+  width: 10rem;
+  height:90px;
+  object-fit:cover;
+
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Make sure Routes take up available space */
+.App main {
+  flex: 1; /* Pushes footer to the bottom */
+}
+.dark-mode {
+  background-color: #121212;
+  color: white;
 }
