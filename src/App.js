@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(false);
+  //States updating
 
   const handleTheme = () => {
     setTheme(!theme);
